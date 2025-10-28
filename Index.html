@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Interactive Form Validation Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <a onclick="showPage('home')">Home</a>
+  <a onclick="showPage('about')">About</a>
+  <a onclick="showPage('login')">Login</a>
+</nav>
+
+<!-- Home Page -->
+<div id="home" class="content active">
+  <h1>Welcome to Our Website</h1>
+  <p>This project demonstrates interactive form validation using a single HTML file.</p>
+</div>
+
+<!-- About Page -->
+<div id="about" class="content">
+  <h1>About Us</h1>
+  <p>This demo includes Home, About, and Login pages with JavaScript validation.</p>
+</div>
+
+<!-- Login Page -->
+<div id="login" class="content">
+  <h1>Login Form</h1>
+  <form id="loginForm">
+    <label>Email:</label>
+    <input type="email" id="email" placeholder="Enter Email">
+    <span class="error" id="emailError"></span>
+
+    <label>Password:</label>
+    <input type="password" id="password" placeholder="Enter Password">
+    <span class="error" id="passwordError"></span>
+
+    <button type="submit">Login</button>
+  </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
